@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+    margin:5px;
+    color: white;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 20px 0;
+}
+label{
+    color:black;
+}
+
+audio {
+    margin-top: 10px;
+}
+
+img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+a {
+    background-color: #1DB954;  /* Spotify green */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+a[style*="background-color: red"] {
+    background-color: red;  /* Delete button specific */
+}
+
+a:hover {
+    opacity: 0.9;
+}

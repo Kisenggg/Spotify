@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favorites</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <h1>Favorite Songs</h1>
+    <a href="/">Go Back</a>
+    
+    <ul>
+        <% songs.forEach(song => { %>
+            <li>
+                <p><%= song.title %> by <%= song.artist %></p>
+                <audio controls>
+                    <source src="<%= song.path %>" type="audio/mpeg">
+                </audio>
+            </li>
+        <% }); %>
+    </ul>
+</body>
+</html>
